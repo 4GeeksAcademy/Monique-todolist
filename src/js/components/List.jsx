@@ -36,8 +36,10 @@ const List = () => {
                 </ul>
                 <div className="footer">{cantidad.length} item left </div>
              </div>
-                         
+             <div className="hoja1"></div> 
+             <div className="hoja2"></div>             
         </div>
+        
     );
 };
 
