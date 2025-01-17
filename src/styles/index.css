@@ -1,11 +1,81 @@
-/* 
 
-    You can write your own styles here...
+.container {
+    max-width: 700px;
+    font-family: Arial, sans-serif;
+    padding: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #f7f4f4;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;  
+  }
+      
+  h1 {
+    text-align: center;
+    color: #706c6c5b;
+    font-size: 50px;
+    margin-bottom: 10px;
+  
+  }
+  ul {
+     margin: 0;
+     padding: 0;
+     list-style: none; 
+     position: relative;
+     z-index: 10;
+  }
+ 
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    color: #666;
+    position: relative;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  }
 
-*/
+  li.task-item:hover .delete-icon {
+    opacity: 1;
+    }
+  
+  li.task-item .delete-icon {
+    opacity: 0;
+    cursor: pointer;
+    color: rgb(241, 124, 124);
+    font-size: 20px;
+    margin: 10px;
+    }
+  
+  li input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+       
+  }
+  li input:focus { 
+    outline: none; /* Elimina el borde cuando el input está enfocado */
+  }
+   
+  .footer {
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #666;
+    position: relative;
+    z-index: 10;
+    
+  }
+  .listas {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0,1);
+    z-index: 5;
+    overflow: hidden;
+    margin-bottom: 60px;
+    
+  }
