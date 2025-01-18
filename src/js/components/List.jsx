@@ -10,8 +10,7 @@ const List = () => {
       if (e.key === "Enter"){
         if (entrada.trim() !== "") {
           setCantidad(cantidad.concat(entrada));
-          setEntrada("");
-        }}
+          }}
   };
 
   function eliminarItem(index) {
@@ -20,9 +19,9 @@ const List = () => {
   };
 
   return(
-        <div className="container" >
+      <div className="container" >
            <h1>Lista de tareas</h1>
-            <div className="listas">
+          <div className="listas">
                <ul>
                   <li>
                      <input type="text" value={entrada} onChange={(e) =>setEntrada(e.target.value)} onKeyDown={agregarItem} placeholder="What needs to be done?"></input>
@@ -35,10 +34,10 @@ const List = () => {
                   ))}
                 </ul>
                 <div className="footer">{cantidad.length} item left </div>
-             </div>
+          </div>
              <div className="hoja1"></div> 
              <div className="hoja2"></div>             
-        </div>
+      </div>
         
     );
 };
