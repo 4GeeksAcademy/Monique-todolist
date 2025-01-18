@@ -20,7 +20,7 @@ const List = () => {
 
   return(
       <div className="container" >
-           <h1>Lista de tareas</h1>
+           <h1>todos</h1>
           <div className="listas">
                <ul>
                   <li>
